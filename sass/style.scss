@@ -1,2 +1,25 @@
 @import 'sass/reset.scss';
 @import 'sass/nav.scss';
+
+$color-main: #0d8c95;
+$color-secondary: #efebe9;
+$color-accent: #AA4639;
+
+body {
+  background-color: $color-secondary;
+  height: 1000px;
+}
+
+header {
+  background-color: $color-accent;
+  height: 3em;
+}
+
+div {
+  width: 90%;
+  padding: 15px;
+  margin: 0 auto;
+  color: white;
+  height: 500px;
+  background-color: $color-main;
+}
