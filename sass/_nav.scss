@@ -1,0 +1,48 @@
+$color-menus: #04272a;
+$color-bright: rgba(107, 192, 198, 1);
+$dark-primary: rgba(255, 255, 255, 1);
+$dark-secondary: rgba(255, 255, 255, .7);
+$dark-hint: rgba(255, 255, 255, .5);
+
+header {
+  background-color: $color-menus;
+  height: 90px;
+  padding: 20px;
+  line-height: 40px;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+		 0px 10px 20px rgba(0,0,0,0.05),
+		 0px 20px 20px rgba(0,0,0,0.05),
+		 0px 30px 20px rgba(0,0,0,0.05);
+
+  h1 {
+    color: $dark-primary;
+  }
+
+  h2 {
+    color: $dark-secondary;
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  h3 {
+    color: $dark-hint;
+  }
+
+  ul {
+    margin-left: 600px;
+    li {
+        color: $dark-secondary;
+        display: inline;
+        text-align: right;
+        padding: 20px;
+        font-size: 25px;
+        a:hover{
+          font-weight: bold;
+          color: $color-bright;
+        }
+
+    }
+  }
+}

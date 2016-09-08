@@ -1,25 +1,54 @@
 @import 'sass/reset.scss';
 @import 'sass/nav.scss';
 
-$color-main: #0d8c95;
-$color-secondary: #efebe9;
+
+$color-backdrop: #efebe9;
 $color-accent: #AA4639;
+$light-primary: rgba(0, 0, 0, 1);
+$light-secondary: rgba(0, 0, 0, 1);
+$light-hint: rgba(0, 0, 0, 1);
+
 
 body {
-  background-color: $color-secondary;
+  background-color: $color-backdrop;
   height: 1000px;
-}
-
-header {
-  background-color: $color-accent;
-  height: 3em;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 div {
-  width: 90%;
   padding: 15px;
   margin: 0 auto;
-  color: white;
   height: 500px;
-  background-color: $color-main;
+}
+#viewBox {
+  padding-top: 200px;
+}
+h2 {
+  margin-bottom: 10px;
+}
+p {
+  font-size: 18px;
+}
+
+// .ng-hide-add, .ng-hide-remove {
+//   animation:0.3s appear ease;
+// }
+.ng-enter{
+  animation: scaleUp 0.5s both ease-in; z-index: 8888;
+}
+.ng-leave{
+  animation: slideOut 0.5s both ease-in; z-index: 9999;
+}
+
+@keyframes slideIn {
+  from    { transform:translateX(100%); }
+   to      { transform: translateX(0); }
+}
+@keyframes slideOut {
+  from    { transform: translateX(0); }
+   to     { transform:translateX(100%); }
+}
+
+@keyframes scaleUp {
+    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
 }
