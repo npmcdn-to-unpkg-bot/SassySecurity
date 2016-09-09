@@ -88,13 +88,8 @@ body {
   height: 1000px;
   font-family: 'Source Sans Pro', sans-serif; }
 
-div {
-  padding: 15px;
-  margin: 0 auto;
-  height: 500px; }
-
 #viewBox {
-  padding-top: 200px; }
+  padding-top: 130px; }
 
 h2 {
   margin-bottom: 10px; }
@@ -102,29 +97,62 @@ h2 {
 p {
   font-size: 18px; }
 
+.note {
+  text-align: center;
+  width: 100%;
+  background-color: rgba(107, 192, 198, 0.7);
+  height: 400px;
+  margin-left: 0;
+  vertical-align: middle;
+  padding-top: 100px; }
+  .note p {
+    font-style: italic;
+    padding-top: 10px; }
+  .note h1 {
+    margin: 20px auto;
+    font-size: 90px;
+    font-weight: bold; }
+
+#overview {
+  text-align: center;
+  width: 100%;
+  background-color: #cdbf69;
+  height: 400px;
+  margin-left: 0;
+  vertical-align: middle;
+  padding-top: 100px; }
+  #overview h1 {
+    margin: 40px auto; }
+
 .ng-enter {
-  animation: scaleUp 0.5s both ease-in;
-  z-index: 8888; }
+  animation: fade 0.5s linear;
+  -webkit-animation: fade 0.5s linear; }
 
-.ng-leave {
-  animation: slideOut 0.5s both ease-in;
-  z-index: 9999; }
-
-@keyframes slideIn {
+@keyframes fade {
   from {
-    transform: translateX(100%); }
+    opacity: 0; }
   to {
-    transform: translateX(0); } }
+    opacity: 1; } }
 
-@keyframes slideOut {
+@-webkit-keyframes fade {
   from {
-    transform: translateX(0); }
+    opacity: 0; }
   to {
-    transform: translateX(100%); } }
+    opacity: 1; } }
 
-@keyframes scaleUp {
-  from {
-    opacity: 0.3;
-    -webkit-transform: scale(0.8); } }
+path {
+  stroke: steelblue;
+  stroke-width: 2;
+  fill: none; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: grey;
+  stroke-width: 1;
+  shape-rendering: crispEdges; }
+
+graph {
+  margin-left: 20px; }
 
 /*# sourceMappingURL=style.css.map */
